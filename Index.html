@@ -6,50 +6,51 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div id="box-container">
-  <div class="page-container">
+  <div id="outer-container">
+    <div id="box-container" class="box-container">
+  
     <form>
       <div class="container">
         <header>
-          <div><img src="prima.png" alt="Company Logo"></div>
+          <div><img src="prima.png" alt="Company Logo" id="prime"></div>
         </header>
         <main>
           <section class="payment-summary">
-            <h4><img src="rupay.png" alt ="rupay" id="rupay">Amount to Pay: 599</h4>
-            <h3> using UPI Apps</h3>
+            <h4><img src="rupay.png" alt="rupay" id="rupay">Amount to Pay: 599</h4>
+            <h3> Pay Using UPI Apps</h3>
           </section>
-          <section class="payment-methods">
-            
             <section class="payment-methods">
                 <div class="payment-option" id="phonepe-option">
                   <label for="phonepe">
                     <div class="payment-box" id="phonepe-box">
                       <img src="phone.png" alt="PhonePe Logo" id="phonepe-logo">
-                      <span>PhonePe</span>
+                      <span class="payment-name">PhonePe</span>
                     </div>
                   </label>
-                  <div class="payment-option" id="googlepay-option">
-                    <label for="googlepay">
-                      <div class="payment-box" id="googlepay-box">
-                        <img src="google.png" alt="Google Pay Logo" id="Google">
-                        <span>Google Pay</span>
-                      </div>
-                    </label>
-                  </div>
-                  <div class="payment-option" id="paytm-option">
-                    <label for="paytm">
-                      <div class="payment-box" id="paytm-box">
-                        <img src="paytm.png" alt="Paytm Logo" id="Paytm">
-                        <span>Paytm</span>
-                      </div>
-                    </label>
-                  </div>
-                  <div class="payment-option" id="bhim-option">
-                    <label for="bhim">
-                      <div class="payment-box" id="bhim-box">
-                        <img src="bhim.png" alt="BHIM Logo" id="Bhim">
-                        <span>BHIM</span>
-                      </div>
+                </div>
+                <div class="payment-option" id="googlepay-option">
+                  <label for="googlepay">
+                    <div class="payment-box" id="googlepay-box">
+                      <img src="google.png" alt="Google Pay Logo" id="Google">
+                      <span class="payment-name">Google Pay</span>
+                    </div>
+                  </label>
+                </div>
+                
+                <div class="payment-option" id="paytm-option">
+                  <label for="paytm">
+                    <div class="payment-box" id="paytm-box">
+                      <img src="paytm.png" alt="Paytm Logo" id="Paytm">
+                      <span class="payment-name">Paytm</span>
+                    </div>
+                  </label>
+                </div>
+                <div class="payment-option" id="bhim-option">
+                  <label for="bhim">
+                    <div class="payment-box" id="bhim-box">
+                      <img src="bhim.png" alt="BHIM Logo" id="Bhim">
+                      <span class="payment-name">BHIM</span>
+                     </div>
                     </label>
                   </div>
                  
@@ -62,25 +63,30 @@
             <h4>Get Payment Link</h4>
             <h5>You will a get Link on</h5>
             <section class="phone-number-and-button">
-                <input type="tel" id="phone-number" placeholder="+91-123-456-7890">
+                <input type="tel" id="phone-number" placeholder="+91 9340530768">
                 <button type="button" id="send-payment">Send</button>
               </section>
-              <section class="notification">
                 <h4>Get Whatsapp and SMS Update</h4>
+              <section class="notification">
                 <h5> Click on this to turn off notification</h5>
-                <button id="notification-toggle">Turn On</button>
-              </section>
-              
-                <div class="footer-content">
-                  <p>Powered By</p>  <img src="primathon-seo-image.jpg" alt="Powered By Image" id="Powered">
-                 
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label></section>
+               <div>
+              <section class="footer-content">
+                
+                  <p>Powered By</p>  <img src="primathon-seo-image.png" alt="Powered By Image" id="Powered">
+                </section>
                 </div>
+               
               
         </main>
       </div>
       
     </form>
   </div>
+
 </div>
 
   <script src="script.js"></script>
